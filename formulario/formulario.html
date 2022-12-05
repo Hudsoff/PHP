@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <title>Formulário</title>
+    <style>
+        form {
+            width: fit-content;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="formulario.php" method="post">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label>Nome: <input type="text" name="nome" required="true" /></label>
+            </p>
+            <p>
+                <label>Email: <input type="email" name="email" required="true" /></label>
+            </p>
+            <p>
+                <label>
+                    Você é:<br />
+                    <input type="radio" name="ocupacao" value="servidor" checked="true" />Servidor<br />
+                    <input type="radio" name="ocupacao" value="aluno" />Aluno<br />
+                    <input type="radio" name="ocupacao" value="visitante" />Visitante<br />
+                </label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Avaliação</legend>
+            <p>
+                <label>Seu interesse na área é: <br>
+                    <input type="checkbox" name="interesses[]" value="profissional">Profissional<br>
+                    <input type="checkbox" name="interesses[]" value="lazer" >Lazer<br>
+                    <input type="checkbox" name="interesses[]" value="curiosidade">Curiosidade<br>
+                </label>
+                <label>
+                    <p>Comentários sobre esta página:</p>
+                    <textarea name="comentarios" cols="26" rows="3"></textarea><br />
+                </label>
+            </p>
+
+            <p>
+                <label>Você indicaria este site para alguém?</label><br>
+                <select name="indicacao">
+                    <option value="Sim">Sim</option>
+                    <option value="Talvez">Talvez</option>
+                    <option value="Jamais">Jamais</option>
+                </select>
+            </p>
+        </fieldset>
+        <input type="submit" value="Enviar" />
+    </form>
+</body>
+
+</html>
