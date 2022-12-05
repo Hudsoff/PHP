@@ -1,10 +1,10 @@
 <?php
-/*
+
  $db = new SQLite3('dados.php');
 
 $db->exec("CREATE TABLE dados (id INTEGER PRIMARY KEY, nome text,email TEXT, ocupacao TEXT,comentarios TEXT,interesse TEXT,indicacao TEXT)");
 $db->exec("INSERT INTO dados(nome,email,ocupacao,comentarios,interesse,indicacao) VALUES ($nome,$email,$ocupacao,$comentarios,$interesse,$indicacao)");
-*/
+
 
 
 
